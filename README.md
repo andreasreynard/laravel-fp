@@ -1,3 +1,48 @@
+# FP Laravel oleh Kelompok 26
+
+## Gambaran Umum
+
+Proyek ini adalah aplikasi CRUD sederhana bertema _Tasks_ yang dibuat menggunakan framework Laravel yang menunjukkan fungsionalitas pengelolaan 3 tabel database terkait yaitu _Task Name_, _Users_, dan _Task Type_.
+
+## Fitur
+
+- Proses CRUD untuk ketiga tabel.
+- Menangani hubungan antar tabel.
+- UI yang bersih dan responsif menggunakan template Laravel Blade.
+- _Database migration_ untuk menyiapkan tabel dan data demo.
+
+## Teknologi yang Digunakan
+
+- PHP (>= 8.x) dan Kerangka Kerja Laravel
+- MySQL
+- Blade untuk _front-end_
+- Bootstrap untuk _styling_
+- Composer
+
+## Struktur Basis Data
+
+### Task
+
+- id
+- user_id
+- task_type_id
+- task_name
+- deadline
+- created_at
+- updated_at
+
+### User
+
+- id
+- user_name
+
+### Task Type
+
+- id
+- task_type
+
+# Just Extras
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">

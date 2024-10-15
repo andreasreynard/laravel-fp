@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.css') }}">
 </head>
 <body>
-    <h1 class="text-center mt-3">WELCOME TO MY TASKS</h1>
-    <div class="text-center">
-        <a href="{{ route('task.show') }}" class="btn btn-primary">MANAGE THEM</a>
+    <h1 class="text-center mt-3">My C.R.U.D.-able Tasks</h1>
+    <div class="mt-3 container">
+        @yield('content')
     </div>
 </body>
 </html>
