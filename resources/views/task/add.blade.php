@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-<h4>Add Task</h4>
+<h4 style="color: blue; font-weight: bold;">Add Task</h4>
 <form action="{{ route('task.submit') }}" method="post">
     @csrf
     <label>User</label>

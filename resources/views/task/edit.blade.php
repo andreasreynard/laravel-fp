@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-<h4>Edit Task</h4>
+<h4 style="color: blue; font-weight: bold;">Edit Task</h4>
 <form action="{{ route('task.update', $task->id) }}" method="post">
     @csrf
     <label>User</label>

@@ -2,9 +2,9 @@
 
 @section('content')
 <div class="d-flex">
-    <h4>Task List</h4>
+    <h4 style="color: blue; font-weight: bold;">Task List</h4>
     <div class="ms-auto">
-        <a class="btn btn-success" href="{{ route('task.add') }}">Add Task</a>
+        <a class="btn btn-success" style="font-size: 30px; padding: 10px 20px;" href="{{ route('task.add') }}">Add Task</a>
     </div>
 </div>
 <table class="table">
