@@ -5,9 +5,17 @@
 <form action="{{ route('task.update', $task->id) }}" method="post">
     @csrf
     <label>User</label>
-    <input type="text" name="user" value="{{ $task->user }}" class="form-control mb-2">
+    <select name="user" class="form-control mb-2">
+        @foreach($users as $user)
+            <option value="{{ $user->id }}" {{ $user->id == $task->user_id ? 'selected' : '' }}>{{ $user->name }}</option>
+        @endforeach
+    </select>
     <label>Task Type</label>
-    <input type="text" name="task_type" value="{{ $task->task_type }}" class="form-control mb-2">
+    <select name="task_type" class="form-control mb-2">
+        @foreach($task_types as $task_type)
+            <option value="{{ $task_type->id }}" {{ $task_type->id == $task->task_type_id ? 'selected' : '' }}>{{ $task_type->name }}</option>
+        @endforeach
+    </select>
     <label>Task Name</label>
     <input type="text" name="task_name" value="{{ $task->task_name }}" class="form-control mb-2">
     <label>Deadline</label>

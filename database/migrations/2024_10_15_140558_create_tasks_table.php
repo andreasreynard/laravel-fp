@@ -11,10 +11,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('task', function (Blueprint $table) {
+        Schema::create('tasks', function (Blueprint $table) {
             $table->id();
-            $table->string('user');
-            $table->string('task_type');
+            $table->foreignId('user_id')->constrained(
+                table: 'users',
+                indexName: 'tasks_user_id'
+            );
+            $table->foreignId('task_type_id')->constrained(
+                table: 'task_types',
+                indexName: 'tasks_task_type_id'
+            );
             $table->string('task_name');
             $table->dateTime('deadline');
             $table->timestamps();
@@ -26,6 +32,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('task');
+        Schema::dropIfExists('tasks');
     }
 };

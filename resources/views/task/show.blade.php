@@ -16,11 +16,11 @@
         <th>Deadline</th>
         <th>Actions</th>
     </tr>
-    @foreach($task as $no=>$data)
+    @foreach($tasks as $no=>$data)
     <tr>
         <td>{{ $no+1 }}</td>
-        <td>{{ $data->user }}</td>
-        <td>{{ $data->task_type }}</td>
+        <td>{{ $data->user->name }} | {{ $data->user->email }}</td>
+        <td><span class="{{ $data->task_type->color }}-text">{{ $data->task_type->name }}</span></td>
         <td>{{ $data->task_name }}</td>
         <td>{{ $data->deadline }}</td>
         <td>

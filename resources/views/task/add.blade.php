@@ -5,9 +5,17 @@
 <form action="{{ route('task.submit') }}" method="post">
     @csrf
     <label>User</label>
-    <input type="text" name="user" class="form-control mb-2">
+    <select name="user" class="form-control mb-2">
+        @foreach($users as $user)
+        <option value="{{ $user->id }}">{{ $user->name }}</option>
+        @endforeach
+    </select>
     <label>Task Type</label>
-    <input type="text" name="task_type" class="form-control mb-2">
+    <select name="task_type" class="form-control mb-2">
+        @foreach($task_types as $task_type)
+        <option value="{{ $task_type->id }}">{{ $task_type->name }}</option>
+        @endforeach
+    </select>
     <label>Task Name</label>
     <input type="text" name="task_name" class="form-control mb-2">
     <label>Deadline</label>

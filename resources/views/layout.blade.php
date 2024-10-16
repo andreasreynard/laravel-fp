@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tasks</title>
     <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.css') }}">
+    <style>
+        .red-text {
+            color: red;
+        }
+        .green-text {
+            color: green;
+        }
+        .blue-text {
+            color: blue;
+        }
+        .yellow-text {
+            color: yellow;
+        }
+    </style>
 </head>
 <body>
     <div class="mt-3 container" style="background-color: #333333; color: yellow;">
