@@ -21,6 +21,8 @@ Proyek ini adalah aplikasi CRUD sederhana bertema _Tasks_ yang dibuat menggunaka
 
 ## Struktur Basis Data
 
+Diambil yang perlu saja
+
 ### Task
 
 - id
@@ -28,18 +30,22 @@ Proyek ini adalah aplikasi CRUD sederhana bertema _Tasks_ yang dibuat menggunaka
 - task_type_id
 - task_name
 - deadline
-- created_at
-- updated_at
 
 ### User
 
 - id
-- user_name
+- name
+- email
 
 ### Task Type
 
 - id
-- task_type
+- name
+- color
+
+## Link YouTube Video
+
+Nonton videonya di [sini](https://youtu.be/4h6QCvdUPR0).
 
 # Just Extras
 
